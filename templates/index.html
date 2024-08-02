@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Attendance System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="jumbotron text-center">
+            <h1>Welcome to Smart Attendance System</h1>
+            <p>Manage attendance with facial recognition</p>
+        </div>
+        <div class="text-center">
+            <a href="/capture" class="btn btn-primary btn-lg m-2">Capture Images</a>
+            <a href="/train" class="btn btn-success btn-lg m-2">Train Model</a>
+            <a href="/recognise" class="btn btn-info btn-lg m-2">Recognise Faces</a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
